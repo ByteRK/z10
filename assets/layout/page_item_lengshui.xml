@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="663dp"
+    android:layout_height="323dp">
+
+    <RelativeLayout
+        android:layout_width="313dp"
+        android:layout_height="313dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/bg_wendu"
+        android:orientation="vertical">
+
+        <ArcSeekBar
+            android:id="@+id/arc_wendu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:colorBackground="#00FFFFFF"
+            android:widthBackground="50dp"
+            android:colorForeground="#FF4072ff"
+            android:colorForeground2="#FF7a9bf5"
+            android:widthForeground="8dp"
+            android:radius="130dp"
+            android:startAngle="130"
+            android:endAngle="410"
+            android:min="-10"
+            android:max="100"
+            android:progress="30"
+            android:showSlider="false"/>
+
+        <RelativeLayout
+            android:id="@+id/shishiwendu"
+            android:layout_width="match_parent"
+            android:layout_height="245dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="73dp"
+                    android:gravity="center"
+                    android:text="实时温度"
+                    android:textSize="20dp"
+                    android:textColor="#ffa0a9b3"/>
+
+                <TextView
+                    android:id="@+id/txt_wendu"
+                    android:layout_width="115dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textSize="48dp"
+                    android:textColor="#fff5f9ff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="33dp"
+                    android:text="℃"
+                    android:textSize="24dp"
+                    android:textColor="#ff8c9297"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shishiwendu"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/min_wendu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="— ℃"
+                android:textColor="#ff7c8390"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/max_wendu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="— ℃"
+                android:textColor="#ff7c8390"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="313dp"
+        android:layout_height="313dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/bg_chushuiliang"
+        android:orientation="vertical">
+
+        <ArcSeekBar
+            android:id="@+id/arc_chushuiliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:colorBackground="#00FFFFFF"
+            android:widthBackground="50dp"
+            android:colorForeground="#FF4072ff"
+            android:colorForeground2="#FF7a9bf5"
+            android:widthForeground="8dp"
+            android:radius="130dp"
+            android:startAngle="130"
+            android:endAngle="410"
+            android:min="0"
+            android:max="100"
+            android:progress="30"
+            android:showSlider="true"
+            android:slider="@mipmap/icon_huakuai"/>
+
+        <LinearLayout
+            android:id="@+id/chushuiliang"
+            android:layout_width="match_parent"
+            android:layout_height="245dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="73dp"
+                android:text="出水量"
+                android:textSize="20dp"
+                android:textColor="#ffa0a9b3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/chushuiliang_reduce"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/btn_border_6bffffff_r22"
+                    android:includeFontPadding="false"
+                    android:text="—"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dp"/>
+
+
+
+                <TextView
+                    android:id="@+id/txt_chushuiliang"
+                    android:layout_width="115dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textSize="48dp"
+                    android:textColor="#fff5f9ff"/>
+
+                <Button
+                    android:id="@+id/chushuiliang_add"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/btn_border_6bffffff_r22"
+                    android:includeFontPadding="false"
+                    android:text="+"
+                    android:textColor="#ffffffff"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="33dp"
+                android:text="℃"
+                android:textSize="24dp"
+                android:textColor="#ff8c9297"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chushuiliang"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/min_chushuiliang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="50ml"
+                android:textColor="#ff7c8390"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/max_chushuiliang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="持续出水"
+                android:textColor="#ff7c8390"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

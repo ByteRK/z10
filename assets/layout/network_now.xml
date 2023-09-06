@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/wifi_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/wifi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_marginLeft="90dp"
+            android:text="TP-1204"
+            android:textColor="#FFE3E3E3"
+            android:textSize="24sp"></TextView>
+        <ImageView
+            android:id="@+id/wifi_lock"
+            android:layout_width="42dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:background="@mipmap/icon_lock">
+        </ImageView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1AFFFFFF"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="69dp"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="其它网络"
+        android:textSize="24sp"
+        android:textColor="#FF898989"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginBottom="8dp"></TextView>
+    </RelativeLayout>

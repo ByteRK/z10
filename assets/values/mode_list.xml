@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mode_img">
+        <item>@mipmap/pic_chushui_lengshui</item>
+        <item>@mipmap/pic_chushui_changwen</item>
+        <item>@mipmap/pic_chushui_feishui</item>
+        <item>@mipmap/pic_chushui_paonai</item>
+        <item>@mipmap/pic_chushui_fengmi</item>
+        <item>@mipmap/pic_chushui_lvcha</item>
+    </string-array>
+    <string-array name="mode_img2">
+        <item>@mipmap/pic_lengshui</item>
+        <item>@mipmap/pic_changwenshui</item>
+        <item>@mipmap/pic_feishui</item>
+        <item>@mipmap/pic_paonai</item>
+        <item>@mipmap/pic_fengmishui</item>
+        <item>@mipmap/pic_lvcha</item>
+    </string-array>
+    <string-array name="mode_name">
+        <item>冷水</item>
+        <item>常温水</item>
+        <item>沸水</item>
+        <item>泡奶</item>
+        <item>蜂蜜水</item>
+        <item>绿茶</item>
+    </string-array>
+    <string-array name="mode_warm">
+        <item>-99</item>
+        <item>99</item>
+        <item>98</item>
+        <item>45</item>
+        <item>60</item>
+        <item>80</item>
+    </string-array>
+    <string-array name="mode_water">
+        <item>350</item>
+        <item>3500</item>
+        <item>350</item>
+        <item>350</item>
+        <item>350</item>
+        <item>350</item>
+    </string-array>
+    <string-array name="mode_type">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </string-array>
+</resources>

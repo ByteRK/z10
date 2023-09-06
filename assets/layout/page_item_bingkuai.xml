@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="663dp"
+    android:layout_height="323dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:background="@drawable/text_1b1c1e_r20"
+        android:drawableLeft="@mipmap/icon_smile"
+        android:drawablePadding="20dp"
+        android:text="温馨提示：    若出冰口不出冰了，可能是系统正在制冰哦，稍等片刻即可~"
+        android:textColor="#FFAEB3BC"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="弹头圆冰"
+        android:textSize="26dp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="30dp"
+        android:text="实现冰块自由，解锁多场景玩法"
+        android:textSize="18dp"
+        android:textColor="#FFAEB3BC"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:drawableTop="@mipmap/ice_lengyin"
+            android:text="冷饮"
+            android:textSize="14dp"
+            android:textColor="#FFAEB3BC"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="46dp"
+            android:drawableTop="@mipmap/ice_lengcai"
+            android:text="冷菜"
+            android:textSize="14dp"
+            android:textColor="#FFAEB3BC"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="46dp"
+            android:drawableTop="@mipmap/ice_baoxian"
+            android:text="保鲜"
+            android:textSize="14dp"
+            android:textColor="#FFAEB3BC"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="46dp"
+            android:drawableTop="@mipmap/ice_bingfu"
+            android:text="冰敷"
+            android:textSize="14dp"
+            android:textColor="#FFAEB3BC"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="46dp"
+            android:drawableTop="@mipmap/ice_meirong"
+            android:text="美容"
+            android:textSize="14dp"
+            android:textColor="#FFAEB3BC"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:layout_marginBottom="10dp"
+            android:background="@mipmap/ice_more"/>
+    </LinearLayout>
+
+</LinearLayout>

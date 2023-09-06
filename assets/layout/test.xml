@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:orientation="vertical">
+
+    <Switch
+        android:id="@+id/seting_switch_time_fromat"
+        android:layout_width="96dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="24dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:showText="false"
+        android:switchMinWidth="96dp"
+        android:textOff="Off"
+        android:textOn="On"
+        android:thumb="@drawable/seting_page_date_btn_thumb"
+        android:thumbTextPadding="0dp"
+        android:track="@drawable/seting_page_date_btn_track" />
+
+    <LinearLayout
+        android:id="@+id/linear_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:id="@+id/unlock_progressBar"
+            android:layout_width="400dp"
+            android:layout_height="87dp"
+            android:background="@drawable/progressbar_progress"
+            android:indeterminate="false"
+            android:max="100"
+            android:padding="10dp"
+            android:progress="0"
+            android:progressTint="#00FFFFFF"
+            android:thumb="@mipmap/icon_unlock" />
+
+        <RelativeLayout
+            android:id="@+id/linear"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center">
+
+            <NumberPicker
+                android:id="@+id/numberpicker"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:background="#00FFFFFF"
+                android:internalLayout="@layout/numberpickerview"
+                android:max="30"
+                android:min="0"
+                android:selectedTextSize="25dp"
+                android:textColor="#80FFFFFF"
+                android:textColor2="#10FF00FF"
+                android:textSize2="20dp"
+                android:wheelItemCount="3" />
+        </RelativeLayout>
+
+        <CheckBox
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/setting_uv_checkbox"
+        android:button="@null"
+        android:clickable="true"/>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

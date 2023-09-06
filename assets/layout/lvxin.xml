@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg"
+        android:orientation="vertical">
+
+<!--        顶部标题-->
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="38dp">
+            <ImageView
+                android:id="@+id/lvXin_back"
+                android:layout_width="26dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="8dp"
+                android:background="@mipmap/icon_back"
+                android:contentDescription="返回">
+            </ImageView>
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:text="滤芯"
+                android:textSize="32sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="114dp"
+                android:gravity="center">
+            </TextView>
+        </RelativeLayout>
+
+<!--        中部数据-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:orientation="horizontal">
+            <!--            左侧信息-->
+            <LinearLayout
+                android:layout_width="377dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="37dp">
+
+                <!--                过滤水量-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:text="总过滤水量"
+                    android:textColor="#CCD0DE"
+                    android:textSize="24sp"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:gravity="center"
+                    android:text="932L"
+                    android:textColor="#EEEEEE"
+                    android:textSize="60sp"></TextView>
+
+                <!--                TDS-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="47dp">
+                    <!--                    原水TDS-->
+                    <LinearLayout
+                        android:layout_width="188dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:gravity="center"
+                            android:text="原水TDS"
+                            android:textColor="#CCD0DE"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#EEEEEE"
+                            android:textSize="48sp"></TextView>
+                    </LinearLayout>
+                    <!--                    纯水TDS-->
+                    <LinearLayout
+                        android:layout_width="188dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:gravity="center"
+                            android:text="纯水TDS"
+                            android:textColor="#CCD0DE"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#EEEEEE"
+                            android:textSize="48sp"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--            分界线-->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/line"
+                android:layout_marginTop="42dp" />
+
+            <!--            HPCC滤芯-->
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="125dp"
+                android:orientation="vertical"
+                android:paddingTop="33dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="HPCC滤芯"
+                    android:textColor="#CCD0DE"
+                    android:textSize="24sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ArcSeekBar
+                    android:id="@+id/lvXin_arc_HPCC"
+                    android:layout_width="match_parent"
+                    android:layout_height="185dp"
+                    android:colorBackground="#66696f"
+                    android:widthBackground="12dp"
+                    android:colorForeground="#49a3ef"
+                    android:colorForeground2="#49a3ef"
+                    android:radius="60dp"
+                    android:startAngle="270"
+                    android:endAngle="630"
+                    android:min="0"
+                    android:max="360"
+                    android:progress="90"
+                    android:showSlider="false"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/lvXin_reSet_HPCC"
+                    android:layout_width="124dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="复位"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/btn_border_6bffffff_r22">
+                </TextView>
+
+
+            </LinearLayout>
+            <!--            RO滤芯-->
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="125dp"
+                android:orientation="vertical"
+                android:paddingTop="33dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="RO滤芯"
+                    android:textColor="#CCD0DE"
+                    android:textSize="24sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ArcSeekBar
+                    android:id="@+id/lvXin_arc_RO"
+                    android:layout_width="match_parent"
+                    android:layout_height="185dp"
+                    android:colorBackground="#66696f"
+                    android:widthBackground="12dp"
+                    android:colorForeground="#49a3ef"
+                    android:colorForeground2="#49a3ef"
+                    android:radius="60dp"
+                    android:startAngle="270"
+                    android:endAngle="630"
+                    android:min="0"
+                    android:max="360"
+                    android:progress="90"
+                    android:showSlider="false"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/lvXin_reSet_RO"
+                    android:layout_width="124dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="复位"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/btn_border_6bffffff_r22">
+                </TextView>
+
+
+            </LinearLayout>
+            <!--            最右侧按键-->
+            <LinearLayout
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="141dp"
+                android:orientation="vertical"
+                android:paddingTop="37dp">
+
+                <RelativeLayout
+                    android:layout_width="115dp"
+                    android:layout_height="101dp">
+
+                    <View
+                        android:layout_width="115dp"
+                        android:layout_height="101dp"
+                        android:background="@drawable/btn_1affffff_r25"></View>
+
+                    <TextView
+                        android:id="@+id/lvXin_paiShui"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableTop="@mipmap/icon_paishui"
+                        android:gravity="center"
+                        android:paddingTop="19dp"
+                        android:paddingBottom="17dp"
+                        android:text="排水"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"></TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="115dp"
+                    android:layout_height="101dp"
+                    android:layout_marginTop="40dp">
+
+                    <View
+                        android:layout_width="115dp"
+                        android:layout_height="101dp"
+                        android:background="@drawable/btn_1affffff_r25"></View>
+
+                    <TextView
+                        android:id="@+id/lvXin_congXi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableTop="@mipmap/icon_chongxi"
+                        android:gravity="center"
+                        android:paddingTop="19dp"
+                        android:paddingBottom="17dp"
+                        android:text="冲洗"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"></TextView>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+<!--        底部提示-->
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="1155dp"
+            android:layout_height="47dp"
+            android:text="更换滤芯前，请先按排水键排水；排水完成后再更换滤芯；更换后按复位键，对应滤芯寿命重新计算"
+            android:textSize="18sp"
+            android:textColor="#FF8B8D94"
+            android:layout_marginLeft="57dp"
+            android:gravity="center"
+            android:background="@drawable/lvxin_tip_bg"
+            >
+        </TextView>
+
+    </LinearLayout>
+

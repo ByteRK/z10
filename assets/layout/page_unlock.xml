@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@mipmap/pic_logo"/>
+
+    <SeekBar
+        android:id="@+id/unlock_progressBar"
+        android:layout_width="400dp"
+        android:layout_height="78dp"
+        android:background="@drawable/progressbar_progress"
+        android:max="100"
+        android:padding="10dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/progressbar_background"
+        android:thumb="@mipmap/icon_unlock" />
+
+</LinearLayout>

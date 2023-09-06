@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/page_picture"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginRight="54dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/line"
+        android:layout_marginTop="82dp"
+        android:layout_marginRight="37dp"/>
+
+    <FrameLayout
+        android:id="@+id/framelayout_page"
+        android:layout_width="663dp"
+        android:layout_height="323dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/line"
+        android:layout_marginTop="62dp"
+        android:layout_marginLeft="45dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="57dp">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:background="@drawable/btn_border_6bffffff_r22"
+            android:text="收藏"
+            android:textColor="#ffe7f1ff"
+            android:textSize="18dp"/>
+
+        <ImageView
+            android:id="@+id/page_picture2"
+            android:layout_width="125dp"
+            android:layout_height="166dp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/page_picture2_btn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/btn_00ffffff_r25"
+            android:text="出水"
+            android:textSize="22dp"
+            android:textColor="#ffd6e7ff"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#00000000">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1AFFFFFF"
+        android:layout_marginTop="9dp"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="其它网络"
+        android:textSize="24sp"
+        android:textColor="#FF898989"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"></TextView>
+</LinearLayout>

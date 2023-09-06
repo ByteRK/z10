@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="84dp">
+
+    <ImageView
+        android:id="@+id/icon_tongsuo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:src="@mipmap/icon_tongsuo"/>
+
+    <ImageView
+        android:id="@+id/icon_lvxin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon_tongsuo"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="36dp"
+        android:src="@mipmap/icon_lvxin"/>
+
+    <TextView
+        android:id="@+id/text_top_uv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon_lvxin"
+        android:layout_marginLeft="68dp"
+        android:layout_centerVertical="true"
+        android:text="UV杀菌"
+        android:textColor="#ffe7e7e7"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_top_tds"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_top_uv"
+        android:layout_marginLeft="113dp"
+        android:layout_centerVertical="true"
+        android:text="TDS: 31"
+        android:textColor="#ff64adf4"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/icon_zhaoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_top_tds"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="107dp"
+        android:src="@mipmap/icon_zhaoming"/>
+
+    <TextView
+        android:id="@+id/text_top_zhileng"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon_zhaoming"
+        android:layout_marginLeft="71dp"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@mipmap/icon_wancheng"
+        android:text="制冷"
+        android:textColor="#ffe7e7e7"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_top_zhibing"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon_zhaoming"
+        android:layout_marginLeft="213dp"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@mipmap/icon_wancheng"
+        android:text="制冰"
+        android:textColor="#ffe7e7e7"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_top_time"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon_zhaoming"
+        android:layout_marginLeft="353dp"
+        android:fontFamily="FiraCode Nerd Font Mono"
+        android:layout_centerVertical="true"
+        android:text="15：02"
+        android:textColor="#ffe7e7e7"
+        android:textSize="20sp" />
+
+
+    <ImageView
+        android:id="@+id/icon_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_top_time"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="36dp"
+        android:src="@mipmap/icon_wifi"/>
+
+    <ImageView
+        android:id="@+id/icon_setup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon_wifi"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="36dp"
+        android:src="@mipmap/icon_setup"/>
+
+</RelativeLayout>

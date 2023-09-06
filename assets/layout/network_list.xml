@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="60dp"
+android:layout_marginTop="10dp"
+android:layout_marginBottom="10dp"
+    android:background="#00000000">
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_6643464a_r25">
+    </View>
+    <ImageView
+        android:id="@+id/wifi_icon"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="44dp"
+        android:layout_height="44dp">
+    </ImageView>
+
+<TextView
+    android:id="@+id/network_list_name"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:layout_marginLeft="90dp"
+    android:text="NULL"
+    android:textColor="#FFE3E3E3"
+    android:textSize="24sp"></TextView>
+<ImageView
+    android:id="@+id/wifi_lock"
+    android:layout_width="42dp"
+    android:layout_height="48dp"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="6dp">
+</ImageView>
+</RelativeLayout>

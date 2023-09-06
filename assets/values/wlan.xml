@@ -1,0 +1,31 @@
+<resources lang="zh_CN">
+    <string name="network_now_status">1</string>
+    <string name="network_now_signal">1</string>
+    <string name="network_now_name">1</string>
+    <string name="network_now_lock">1</string>
+
+    <string-array name="network_list_signal">
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="network_list_name">
+        <item>酸菜鱼</item>
+        <item>酱板鸭</item>
+        <item>红烧排骨</item>
+        <item>煲仔饭</item>
+        <item>猪脚煲</item>
+        <item>云髻山肠粉</item>
+    </string-array>
+    <string-array name="network_list_lock">
+        <item>1</item>
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingTop="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+         <ImageView
+             android:id="@+id/icon_back"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="40dp"
+             android:background="@mipmap/icon_back"
+             android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="UV杀菌"
+            android:textSize="32dp"
+            android:layout_toRightOf="@id/icon_back" />
+
+        <Button
+            android:id="@+id/btn_keep"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="保存"
+            android:textSize="24dp"
+            android:background="@drawable/setting_btn_blue_r30"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <CheckBox
+            android:id="@+id/checkbox_keep_uv_mode"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/setting_uv_checkbox"
+            android:button="@null"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保持开启UV杀菌模式"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:layout_toRightOf="@id/checkbox_keep_uv_mode"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <CheckBox
+            android:id="@+id/checkbox_set_uv_time"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/setting_uv_checkbox"
+            android:button="@null"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置时间段内进行UV杀菌"
+            android:textSize="24dp"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@id/checkbox_set_uv_time"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="50dp">
+
+        <NumberPicker
+            android:id="@+id/numberpicker_star_hour"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginLeft="35dp"
+            android:internalLayout="@layout/setting_numpick_68x68"
+            android:min="00"
+            android:max="23"
+            android:wheelItemCount="3"
+            android:background="@drawable/setting_uv_numpicker_r5_gb"
+            android:selectedTextSize="32dp"
+            android:textSize="36dp"
+            android:textSize2="20dp"
+            android:selectedTextColor="#4BA8F6"
+            android:textColor="#00FFFFFF"
+            android:textColor2="#40FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="-4dp"
+            android:text=":"
+            android:textSize="40dp"
+            android:textColor="#FFFFFF"/>
+
+        <NumberPicker
+            android:id="@+id/numberpicker_star_min"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:internalLayout="@layout/setting_numpick_68x68"
+            android:min="00"
+            android:max="59"
+            android:wheelItemCount="3"
+            android:background="@drawable/setting_uv_numpicker_r5_gb"
+            android:selectedTextSize="32dp"
+            android:textSize="36dp"
+            android:textSize2="20dp"
+            android:selectedTextColor="#4BA8F6"
+            android:textColor="#00FFFFFF"
+            android:textColor2="#40FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="-4dp"
+            android:text="至"
+            android:textSize="28dp"
+            android:textColor="#C9C9C9"/>
+
+        <NumberPicker
+            android:id="@+id/numberpicker_end_hour"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:internalLayout="@layout/setting_numpick_68x68"
+            android:min="00"
+            android:max="23"
+            android:wheelItemCount="3"
+            android:background="@drawable/setting_uv_numpicker_r5_gb"
+            android:selectedTextSize="32dp"
+            android:textSize="36dp"
+            android:textSize2="20dp"
+            android:selectedTextColor="#4BA8F6"
+            android:textColor="#00FFFFFF"
+            android:textColor2="#40FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="-4dp"
+            android:text=":"
+            android:textSize="40dp"
+            android:textColor="#FFFFFF"/>
+
+        <NumberPicker
+            android:id="@+id/numberpicker_end_min"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:internalLayout="@layout/setting_numpick_68x68"
+            android:min="00"
+            android:max="59"
+            android:wheelItemCount="3"
+            android:background="@drawable/setting_uv_numpicker_r5_gb"
+            android:selectedTextSize="32dp"
+            android:textSize="36dp"
+            android:textSize2="20dp"
+            android:selectedTextColor="#4BA8F6"
+            android:textColor="#00FFFFFF"
+            android:textColor2="#40FFFFFF"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_initiative_uv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkbox_initiative_uv"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/setting_uv_checkbox"
+                android:button="@null"
+                android:clickable="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手动进行UV杀菌"
+                android:textSize="24dp"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@id/checkbox_initiative_uv"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_initiative_uv"
+            android:text="(默认关闭uv杀菌模式，点击立即杀菌进行杀菌)"
+            android:textSize="16dp"
+            android:textColor="#95989D"/>
+
+        <Button
+            android:id="@+id/btn_nowshajun"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="立即杀菌"
+            android:textSize="24dp"
+            android:background="@drawable/btn_border_6bffffff_r22"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

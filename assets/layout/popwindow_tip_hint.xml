@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="480dp"
+    android:orientation="vertical"
+    android:background="@mipmap/gs_page_bingkuai">
+    <LinearLayout
+        android:id="@+id/popwindow_Box"
+        android:layout_width="600dp"
+        android:layout_height="312dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/popwindow_bg">
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_tiping"
+            android:layout_marginTop="46dp"
+            android:layout_marginBottom="10dp"/>
+        
+        <TextView
+            android:id="@+id/popwindow_tip_text"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:paddingHorizontal="130dp"
+            android:text="系统制冷中，请稍后"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center"
+            android:textSize="32sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当"
+                android:textSize="22dp"
+                android:textColor="#FFCBCBCB"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_close"/>
+
+            <TextView
+                android:id="@+id/popwindow_tip_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="制冰状态灯变成"
+                android:textSize="22dp"
+                android:textColor="#FFCBCBCB"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_wancheng"/>
+
+            <TextView
+                android:id="@+id/popwindow_tip_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="后，可出冷水"
+                android:textSize="22dp"
+                android:textColor="#FFCBCBCB"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="88dp"
+        android:layout_marginLeft="340dp"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/popwindow_tip_hint_enter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FF4BA8F6"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:text="我知道了"
+            android:background="@drawable/popwindow_btn_bg" />
+    </LinearLayout>
+</LinearLayout>

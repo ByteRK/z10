@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="480dp"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingTop="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:background="@mipmap/icon_back"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="时间设置"
+            android:textSize="32dp"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@id/icon_back" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="100dp">
+
+        <NumberPicker
+            android:id="@+id/numberpicker_set_year"
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:layout_marginLeft="35dp"
+            android:internalLayout="@layout/setting_numpick_100x220"
+            android:min="2010"
+            android:max="2099"
+            android:wheelItemCount="3"
+            android:background="#00FFFFFF"
+            android:selectedTextSize="32dp"
+            android:textSize="36dp"
+            android:textSize2="15dp"
+            android:selectedTextColor="#4BA8F6"
+            android:textColor="#60FFFFFF"
+            android:textColor2="#20FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="15dp"
+            android:layout_marginTop="-4dp"
+            android:gravity="center"
+            android:text="年"
+            android:textSize="28dp"
+            android:textColor="#C9C9C9"/>
+
+        <NumberPicker
+            android:id="@+id/numberpicker_set_mon"
+            android:layout_width="100dp"
+            android:layout_height="220dp"
+            android:internalLayout="@layout/setting_numpick_100x220"
+            android:min="1"
+            android:max="12"
+            android:wheelItemCount="3"
+            android:background="#00FFFFFF"
+            android:selectedTextSize="32dp"
+            android:textSize="36dp"
+            android:textSize2="20dp"
+            android:selectedTextColor="#4BA8F6"
+            android:textColor="#00FFFFFF"
+            android:textColor2="#40FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="15dp"
+            android:layout_marginTop="-4dp"
+            android:gravity="center"
+            android:text="月"
+            android:textSize="28dp"
+            android:textColor="#C9C9C9"/>
+
+        <NumberPicker
+            android:id="@+id/numberpicker_set_day"
+            android:layout_width="100dp"
+            android:layout_height="220dp"
+            android:internalLayout="@layout/setting_numpick_100x220"
+            android:min="1"
+            android:max="30"
+            android:wheelItemCount="3"
+            android:background="#00FFFFFF"
+            android:selectedTextSize="32dp"
+            android:textSize="36dp"
+            android:textSize2="20dp"
+            android:selectedTextColor="#4BA8F6"
+            android:textColor="#00FFFFFF"
+            android:textColor2="#40FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="15dp"
+            android:layout_marginTop="-4dp"
+            android:gravity="center"
+            android:text="日"
+            android:textSize="28dp"
+            android:textColor="#C9C9C9"/>
+
+        <NumberPicker
+            android:id="@+id/numberpicker_set_hour"
+            android:layout_width="100dp"
+            android:layout_height="220dp"
+            android:internalLayout="@layout/setting_numpick_100x220"
+            android:min="00"
+            android:max="23"
+            android:wheelItemCount="3"
+            android:background="#00FFFFFF"
+            android:selectedTextSize="32dp"
+            android:textSize="36dp"
+            android:textSize2="20dp"
+            android:selectedTextColor="#4BA8F6"
+            android:textColor="#00FFFFFF"
+            android:textColor2="#40FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="15dp"
+            android:layout_marginTop="-4dp"
+            android:gravity="center"
+            android:text="时"
+            android:textSize="28dp"
+            android:textColor="#C9C9C9"/>
+
+        <NumberPicker
+            android:id="@+id/numberpicker_set_min"
+            android:layout_width="100dp"
+            android:layout_height="220dp"
+            android:internalLayout="@layout/setting_numpick_100x220"
+            android:min="00"
+            android:max="59"
+            android:wheelItemCount="3"
+            android:background="#00FFFFFF"
+            android:selectedTextSize="32dp"
+            android:textSize="36dp"
+            android:textSize2="20dp"
+            android:selectedTextColor="#4BA8F6"
+            android:textColor="#00FFFFFF"
+            android:textColor2="#40FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4dp"
+            android:paddingHorizontal="15dp"
+            android:gravity="center"
+            android:text="分"
+            android:textColor="#C9C9C9"
+            android:textSize="28dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/btn_set_time_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:background="#604a4d52"
+            android:text="取消"
+            android:textSize="32dp"
+            android:textColor="#9CA4AA"/>
+
+        <Button
+            android:id="@+id/btn_set_time_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:background="#4ba8f6"
+            android:text="确认"
+            android:textSize="32dp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</LinearLayout>
